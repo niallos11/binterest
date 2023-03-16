@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['app-binterest.herokuapp.com','localhost']
+ALLOWED_HOSTS = ['app-binterest.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -68,7 +68,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',  # required by allauth  # noqa
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
@@ -77,7 +77,7 @@ TEMPLATES = [
 ]
 
 AUTHENTICATION_BACKENDS = (
-    # Needed to login by username in Django admin, regardless of `allauth`
+    # Needed to login by username in Django admin, regardless of `allauth`  # noqa
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
@@ -94,7 +94,7 @@ ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/' 
+LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'binterest.wsgi.application'
 
@@ -115,16 +115,16 @@ DATABASES = {
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 
