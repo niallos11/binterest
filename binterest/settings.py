@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', '')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'dk^-$v-7s*o1mgt-@@^bmccg7s%*8=3n!c^p3)-^y546actlw1')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['app-binterest.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-niallos11-binterest-xjzie29p5b.us2.codeanyapp.com','app-binterest.herokuapp.com']
 
 
 # Application definition
