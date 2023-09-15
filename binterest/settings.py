@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECRET_KEY = os.environ.get('SECRET_KEY')
 SECRET_KEY = os.environ.get('SECRET_KEY', ''),
-DEBUG = 'FALSE'
+DEBUG = 'False'
 ALLOWED_HOSTS = ['8000-niallos11-binterest-xay8xf3i81.us2.codeanyapp.com', 'app-binterest.herokuapp.com']
 =======
 SECRET_KEY = os.environ.get('SECRET_KEY')
@@ -36,8 +36,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['8000-niallos11-binterest-cj4xrlrxjl.us2.codeanyapp.com','app-binterest.herokuapp.com']
 
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
