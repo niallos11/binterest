@@ -25,17 +25,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECRET_KEY = os.environ.get('SECRET_KEY')
-SECRET_KEY = os.environ.get('SECRET_KEY', ''),
+SECRET_KEY = os.environ.get('SECRET_KEY'),
 DEBUG = 'False'
 ALLOWED_HOSTS = ['8000-niallos11-binterest-xay8xf3i81.us2.codeanyapp.com', 'app-binterest.herokuapp.com']
-
-SECRET_KEY = os.environ.get('SECRET_KEY')
-
+#
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-
-ALLOWED_HOSTS = ['8000-niallos11-binterest-cj4xrlrxjl.us2.codeanyapp.com','app-binterest.herokuapp.com']
-
+DEBUG = True
 
 INSTALLED_APPS = [
     'django.contrib.admin',
