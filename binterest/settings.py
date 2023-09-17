@@ -22,15 +22,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
+# Import the env module to load environment variables
+if os.path.isfile('env.py'):
+    import env
 
-# SECRET_KEY = os.environ.get('SECRET_KEY')
-SECRET_KEY = os.environ.get('SECRET_KEY'),
-DEBUG = 'False'
+# Access the variables from env.py
+SECRET_KEY = os.environ.get("SECRET_KEY")
+DEBUG = os.environ.get("DEBUG") == "True"  # Convert the string to a boolean
+DATABASE_URL = os.environ.get("DATABASE_URL")
+
 ALLOWED_HOSTS = ['8000-niallos11-binterest-xay8xf3i81.us2.codeanyapp.com', 'app-binterest.herokuapp.com']
-#
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -213,8 +214,11 @@ FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY",'')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+STRIPE_API_KEY = os.getenv('STRIPE_API_KEY','')
+
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
