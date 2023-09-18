@@ -51,7 +51,73 @@
 ### Validator Testing
 
 ### HTML
-- No errors were returned when passing through the official - https://validator.w3.org/nu/?doc=https%3A%2F%2Fdevopsblog-9ee0000374f1.herokuapp.com%2F
+https://validator.w3.org/nu/?doc=https%3A%2F%2Fapp-binterest.herokuapp.com%2F
+
+Error: Element li not allowed as child of element nav in this context. (Suppressing further errors from this subtree.)
+
+From line 109, column 17; to line 109, column 45
+
+          <li class="list-inline-item">↩    <
+
+Contexts in which element li may be used:
+Inside ol elements.
+Inside ul elements.
+Inside menu elements.
+Content model for element nav:
+Flow content.
+Error: Element li not allowed as child of element nav in this context. (Suppressing further errors from this subtree.)
+
+From line 131, column 1; to line 131, column 38
+
+iv>↩</li>↩<li class="list-inline-item dropdown">↩    <
+
+Contexts in which element li may be used:
+Inside ol elements.
+Inside ul elements.
+Inside menu elements.
+Content model for element nav:
+Flow content.
+Error: Duplicate ID user-options.
+
+From line 132, column 5; to line 132, column 146
+
+own">↩    <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">↩     
+
+Warning: The first occurrence of ID user-options was here.
+
+From line 73, column 25; to line 74, column 71
+
+          <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"↩                            aria-haspopup="true" aria-expanded="false">↩     
+
+Error: Element li not allowed as child of element nav in this context. (Suppressing further errors from this subtree.)
+
+From line 145, column 1; to line 145, column 29
+
+iv>↩</li>↩<li class="list-inline-item">↩    <
+
+Contexts in which element li may be used:
+Inside ol elements.
+Inside ul elements.
+Inside menu elements.
+Content model for element nav:
+Flow content.
+Error: Element style not allowed as child of element body in this context. (Suppressing further errors from this subtree.)
+
+From line 265, column 3; to line 265, column 9
+
+div>↩  ↩  <style>↩  .ob
+
+Contexts in which element style may be used:
+Where metadata content is expected.
+In a noscript element that is a child of a head element.
+Content model for element body:
+Flow content.
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 292, column 5; to line 292, column 35
+
+↩    ↩    <script type="text/javascript">↩  
+
 
 
 ### CSS - Errors
