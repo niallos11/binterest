@@ -1,17 +1,29 @@
 # Binterest
+A e-commerence platform for Upcycled & Recycled & Sustainable products.
 
 ## Features
 
 
-### Features Left to Implement
-
-- Custom Models
-- Social media 
-
+###  To Do assessment criteria:
+at least 3 original custom models with associated functionalities, markedly different from those present in the Boutique Ado walkthrough project if they have been used as a basis for your project.
+at least one form on the front end, which provides either admin or regular users with CRUD functionality without having to access the admin panel.
+at least one UI element on the front end, which allows either admin or regular users to delete records in the database without having to access the admin panel.
+evidence of agile methodologies followed during the development of your project in the GitHub repository.
+a robots.txt file.
+a sitemap.xml file.
+descriptive meta tags in the HTML.
+at least one link to an external resource, which makes use of a rel attribute.
+a custom 404 error page.
+evidence of either a real Facebook business page, or mockup of one, for the purposes of digital marketing.
+evidence of a newsletter signup form for the purposes of digital marketing.
+a description of the e-commerce business model including marketing strategies in the README file.
+~~DEBUG mode set to False.~~
+working functionality for users to register and log in and out of the application without issues.
+working E-commerce functionality for users to make purchases within the application.
+detailed testing write ups, beyond results of validation tools.
 
 
 ## User stories 
-
 - As a site user I can login to a registered account so that access the comment and like functionality
 - As a Site Admin I can create, read, update  posts so that I can manage the blog content
 - As a Site Admin I can create draft posts so that I can finish writing the content later
@@ -118,12 +130,9 @@ From line 292, column 5; to line 292, column 35
 
 ↩    ↩    <script type="text/javascript">↩  
 
-
-
 ### CSS - Errors
 
 https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fapp-binterest.herokuapp.com&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en
-
 webkit-user-select is a vendor extension
 214		-moz-user-select is a vendor extension
 215		-ms-user-select is a vendor extension
@@ -169,7 +178,6 @@ The live link can be found here - https://app-binterest.herokuapp.com
 
 
 ### Media
-
 - The images used for the background page were taken from a Open Source site.
 - The fav icon was taken from - https://www.favicon.cc
 - The images were resized with Bulk Resize Photos - https://bulkresizephotos.com/en
